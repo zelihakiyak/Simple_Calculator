@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="243dp"
+        android:layout_height="107dp"
+        android:text="Result:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <EditText
+        android:id="@+id/number2Text"
+        android:layout_width="236dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:hint="Enter number "
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="239dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:onClick="sum"
+            android:stateListAnimator="@android:anim/accelerate_interpolator"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:onClick="sub"
+            android:stateListAnimator="@android:anim/accelerate_interpolator"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:onClick="mul"
+            android:stateListAnimator="@android:anim/accelerate_interpolator"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="59dp"
+            android:layout_height="54dp"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:onClick="div"
+            android:stateListAnimator="@android:anim/accelerate_interpolator"
+            android:text="/" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/number1Text"
+        android:layout_width="236dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:hint="Enter number"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
